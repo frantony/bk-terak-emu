@@ -1,10 +1,9 @@
 #!/bin/sh
 
 set -e
-
 set -x
-autoheader
-autoconf -Wall --force
+
+autoreconf --verbose -Wall --install --force
 
 { set +x; } 2>/dev/null
 
